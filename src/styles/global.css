@@ -1,0 +1,121 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+
+html {
+  /* background-color: lavenderblush; */
+}
+
+a{
+  /* position: relative; */
+  text-decoration: none;
+  color:inherit;
+  opacity: .75;
+}
+
+a:hover{
+  opacity: 10;
+  /* bottom: 1px; */
+}
+header {
+  padding-top: 2%;
+  font-family: "Authentic Sans";
+}
+nav {
+  display: flex;
+  padding-left: 10em;
+  padding-right: 10em;
+  grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
+  /* grid-auto-rows: auto; */
+  grid-gap: 3.5em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel{
+  padding-top: 3%;
+}
+
+.images-body{
+  display: flex;
+  grid-template-columns: 1fr 6fr;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+.nextArrow {
+  position: absolute;
+  opacity: 30%;
+  top: 40%;
+  right: 80px;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.nextArrow:hover {
+  opacity: 40%;
+}
+
+.prevArrow {
+  position: absolute;
+  opacity: 30%;
+  top: 40%;
+  left: 80px;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.prevArrow:hover {
+  opacity: 40%;
+}
+
+.sc div{
+  text-align: center
+}
+
+.sc img{
+  width: auto;
+  margin: auto;
+}
+
+.sideBar{
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.1em;
+  justify-content: flex-start;
+  font-family: "Authentic Sans";
+  font-style: italic;
+  margin-top: 4em;
+  margin-left: 4em;
+  width: 10em;
+}
+
+.sliderImg {
+  box-sizing: border-box;
+  height: 560px;
+  width: auto;
+  padding: 0px 2vw;
+  object-fit: cover;
+}
+
+.slick-track {
+    margin:auto;
+}
+
+.wrapper {
+  display: flex !important;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@font-face {
+  font-family:"Authentic Sans";
+  src:url("fonts/otf/AUTHENTICSans-60.otf")
+}
