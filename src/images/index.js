@@ -12,9 +12,17 @@ import img10 from "./bw/10.jpg"
 import img11 from "./bw/11.jpg"
 import img12 from "./bw/12.jpg"
 
+import color00 from "./color/00.jpg"
 import color01 from "./color/01.jpg"
 import color02 from "./color/02.jpg"
-
+import color03 from "./color/03.jpg"
+import color04 from "./color/04.jpg"
+import color05 from "./color/05.jpg"
+import color06 from "./color/06.jpg"
+import color07 from "./color/07.jpg"
+import color08 from "./color/08.jpg"
+import color09 from "./color/09.jpg"
+import color10 from "./color/10.jpg"
 export const IndexImages = [
   {
     id:"0",
@@ -75,6 +83,11 @@ export const IndexImages = [
 
 export const ColorImages = [
   {
+    id:"00",
+    name:"yak",
+    url:color00
+  },
+  {
     id:"1",
     name: "table",
     url: color01
@@ -91,5 +104,35 @@ export const ColorImages = [
     id:"4",
     name:"truck",
     url: color04
-  }
+  },
+  {
+    id:"5",
+    name:"mountain",
+    url:color05
+  },
+  {
+    id:"6",
+    name:"bone",
+    url:color06
+  },
+  {
+    id:"7",
+    name:"pie",
+    url:color07
+  },
+  {
+    id:"8",
+    name:"boat",
+    url:color08
+  },
+  {
+    id:"9",
+    name:"field",
+    url:color09
+  },
+  {
+    id:"10",
+    name:"mountain",
+    url:color10
+  },
 ]
