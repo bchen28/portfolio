@@ -8,7 +8,7 @@ import "../styles/global.css";
 export default class ColorPage extends Component {
   constructor(props){
     super(props);
-    this.state = {content: IndexImages, title: "black & white"}
+    this.state = {content: ColorImages, title: "color"}
     this.switchCarousel = this.switchCarousel.bind(this)
     // this.sideBarRef = React.createRef();
   }
@@ -19,32 +19,22 @@ export default class ColorPage extends Component {
     this.forceUpdate();
   }
 
-  // checkColor(title){
-  //   if this.state.title == title:
-  //     return "color:red";
-  //   return "color:black";
-  // }
-
   render(){
     const numberlist = [
       {
         title: "color",
-        state: "color",
         content: ColorImages,
       },
       {
         title: "black & white",
-        state:"black & white",
         content: IndexImages,
       },
       {
         title: "archival",
-        state: "archival",
         content: null
       },
       {
         title: "iphone",
-        state: "iphone",
         content: null
       }
     ];

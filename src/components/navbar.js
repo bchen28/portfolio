@@ -8,8 +8,8 @@ export default class NavBar extends Component {
         <div><a href = "/text" >Essays</a></div>
         <div><a href = "/images">Images</a></div>
         <div><a className = "logo" href = "/">BOWEN CHEN</a></div>
-        <div><a href = "#">Technical Writing</a></div>
-        <div><a href = "#">Contact</a></div>
+        <div><a href = "/technical-writing">Technical Writing</a></div>
+        <div><a href = "/about">About</a></div>
       </nav>
     );
   }

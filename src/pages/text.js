@@ -22,12 +22,10 @@ export default class TextPage extends Component {
     const textlist = [
       {
         title: "Escaping the Frame",
-        state: "color",
         content: <PhotoEssay/>,
       },
       {
         title: "NFT",
-        state:"black & white",
         content: null,
       },
     ];
