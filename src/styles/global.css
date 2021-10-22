@@ -1,5 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
 
 html {
   /* background-color: lavenderblush; */
@@ -20,26 +21,49 @@ header {
   padding-top: 2%;
   font-family: "Authentic Sans";
 }
+
 nav {
+  grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
   display: flex;
-  padding-left: 10em;
-  padding-right: 10em;
+  height: 5 vh;
   grid-template-columns: 2fr 2fr 3fr 2fr 2fr;
   /* grid-auto-rows: auto; */
   grid-gap: 3.5em;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-left: 1em;
+  margin: auto;
 }
 
 .carousel{
-  padding-top: 3%;
+  margin-top: 3vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.cssgrid {
+  display:grid;
+  grid-templat-columns: 100px auto;
+  grid-template-rows: 50px auto;
 }
 
 .images-body{
   display: flex;
   grid-template-columns: 1fr 6fr;
+  grid-gap: 1 vw;
 }
+
+.text-body{
+  padding-left: 9vw;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+}
+
 
 .logo {
   font-size: 1.5em;
@@ -83,6 +107,10 @@ nav {
 }
 
 .sideBar{
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:2;
+  grid-row-end:3;
   display: flex;
   flex-direction: column;
   grid-template-columns: 1fr 1fr 1fr;
@@ -90,18 +118,20 @@ nav {
   justify-content: flex-start;
   font-family: "Authentic Sans";
   font-style: italic;
-  margin-top: 4em;
-  margin-left: 4em;
-  width: 10em;
+  margin-top: 10vh;
+  margin-left: 4vw;
+  /* width: 10vw; */
+  cursor: pointer;
 }
 
 .sliderImg {
   box-sizing: border-box;
-  height: 560px;
+  height: 80%;
   width: auto;
   padding: 0px 2vw;
   object-fit: cover;
 }
+
 
 .slick-track {
     margin:auto;
@@ -110,9 +140,37 @@ nav {
 .wrapper {
   display: flex !important;
   flex-flow: column wrap;
+  height: 72vh;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+.writing{
+  grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:2;
+  grid-row-end:3;
+
+  padding-top: 7.2vh;
+  width:42em;
+  margin: auto;
+  padding-left: .4em;
+  font-family: "garamond", Georgia, serif;
+  line-height: 1.5;
+}
+
+.images{
+  grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:2;
+  grid-row-end:3;
+  width:80vw;
+  margin: auto;
+}
+@font-face{
+  font-family:"garamond";
+  src:url("fonts/EBGaramond-VariableFont_wght.ttf")
 }
 
 @font-face {

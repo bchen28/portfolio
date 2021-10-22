@@ -8,16 +8,22 @@ import "../styles/global.css";
 export default class ColorPage extends Component {
   constructor(props){
     super(props);
-    this.state = {content: IndexImages}
+    this.state = {content: IndexImages, title: "black & white"}
     this.switchCarousel = this.switchCarousel.bind(this)
     // this.sideBarRef = React.createRef();
   }
 
-  switchCarousel(clickContent){
-    this.setState({content: clickContent});
+  switchCarousel(clickContent, clickTitle){
+    this.setState({content: clickContent, title: clickTitle});
     console.log(this.state.content);
     this.forceUpdate();
   }
+
+  // checkColor(title){
+  //   if this.state.title == title:
+  //     return "color:red";
+  //   return "color:black";
+  // }
 
   render(){
     const numberlist = [
@@ -46,21 +52,23 @@ export default class ColorPage extends Component {
     const {content} = this.state;
     return(
       <main>
-        <header>
-          <NavBar/>
-        </header>
-        <div className="images-body">
+        <div className = "cssgrid">
           <div className="sideBar">
             {numberlist.map((item)=>{
               return (
                 <div>
-                  <a onClick={()=>this.switchCarousel(item.content)}>{item.title}</a>
+                  <a  onClick={()=>this.switchCarousel(item.content, item.title)} style ={{color: item.title==this.state.title ? 'red' : 'black'}} >{item.title}</a>
                 </div>
               )
             })}
           </div>
-          <div className="images-carousel">
-            <Carousel images={content}/>
+          <div className="text-body">
+            <header>
+              <NavBar/>
+            </header>
+            <div className="images">
+              <Carousel images={content}/>
+            </div>
           </div>
         </div>
       </main>
