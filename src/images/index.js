@@ -23,6 +23,27 @@ import color07 from "./color/07.jpg"
 import color08 from "./color/08.jpg"
 import color09 from "./color/09.jpg"
 import color10 from "./color/10.jpg"
+
+import archive01 from "./archival/01.jpg"
+import archive02 from "./archival/02.jpg"
+import archive03 from "./archival/03.jpg"
+import archive04 from "./archival/04.jpg"
+import archive05 from "./archival/05.jpg"
+import archive06 from "./archival/06.jpg"
+import archive07 from "./archival/07.jpg"
+import archive08 from "./archival/08.jpg"
+import archive09 from "./archival/09.jpg"
+import archive10 from "./archival/10.jpg"
+import archive11 from "./archival/11.jpg"
+import archive12 from "./archival/12.jpg"
+import archive13 from "./archival/13.jpg"
+import archive14 from "./archival/14.jpg"
+import archive15 from "./archival/15.jpg"
+import archive16 from "./archival/16.jpg"
+import archive17 from "./archival/17.jpg"
+import archive18 from "./archival/18.jpg"
+import archive19 from "./archival/19.jpg"
+
 export const IndexImages = [
   {
     id:"0",
@@ -83,11 +104,6 @@ export const IndexImages = [
 
 export const ColorImages = [
   {
-    id:"00",
-    name:"yak",
-    url:color00
-  },
-  {
     id:"1",
     name: "table",
     url: color01
@@ -134,5 +150,89 @@ export const ColorImages = [
     id:"10",
     name:"mountain",
     url:color10
+  },
+]
+
+export const ArchiveImages = [
+  {
+    id:"1",
+    url: archive01
+  },
+  {
+    id:"2",
+    url: archive02
+  },
+  {
+    id:"3",
+    url: archive03
+  },
+  {
+    id:"4",
+    url: archive04
+  },
+  {
+    id:"5",
+    url: archive05
+  },
+  {
+    id:"6",
+    url: archive06
+  },
+  {
+    id:"7",
+    url: archive07
+  },
+  {
+    id:"8",
+    url: archive08
+  },
+  {
+    id:"9",
+    url: archive09
+  },
+
+
+]
+
+export const GoodwinImages = [
+  {
+    id:"16",
+    url: archive16
+  },
+  {
+    id:"14",
+    url: archive14
+  },
+  {
+    id:"17",
+    url: archive17
+  },
+  {
+    id:"18",
+    url: archive18
+  },
+  {
+    id:"19",
+    url: archive19
+  },
+  {
+    id:"15",
+    url: archive15
+  },
+  {
+    id:"10",
+    url: archive10
+  },
+  {
+    id:"11",
+    url: archive11
+  },
+  {
+    id:"12",
+    url: archive12
+  },
+  {
+    id:"13",
+    url: archive13
   },
 ]

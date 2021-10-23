@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Carousel from "../components/carousel.js"
 import NavBar from "../components/navbar.js"
 import SideBar from "../components/sidebar.js"
-import {ColorImages,IndexImages} from "../images/index.js"
+import {ColorImages,IndexImages, ArchiveImages, GoodwinImages} from "../images/index.js"
 import "../styles/global.css";
 
 export default class ColorPage extends Component {
@@ -31,7 +31,7 @@ export default class ColorPage extends Component {
       },
       {
         title: "archival",
-        content: null
+        content: ArchiveImages,
       },
       {
         title: "iphone",
@@ -56,10 +56,20 @@ export default class ColorPage extends Component {
             <header>
               <NavBar/>
             </header>
-            <div className="images">
+
+            <div className={this.state.title=="archival" ? "archival-images":"images"}>
               <Carousel images={content}/>
             </div>
+            {this.state.title=="archival" &&
+              <div>
+                <p className = "archive-image-label"> <i>All specimens were digitized in collaboration with the Brown University Herbarium.</i> <br/> Shown below are samples from the <i>exsiccatae</i> (or bound collection) of Hannah Wilkinson Goodwin</p>
+                <div className = "archival-images">
+                  <Carousel images = {GoodwinImages}/>
+                </div>
+              </div>
+            }
           </div>
+
         </div>
       </main>
     );
