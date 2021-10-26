@@ -44,6 +44,59 @@ import archive17 from "./archival/17.jpg"
 import archive18 from "./archival/18.jpg"
 import archive19 from "./archival/19.jpg"
 
+import iphone00 from "./iphone/00.jpg"
+import iphone01 from "./iphone/01.jpg"
+import iphone02 from "./iphone/02.jpg"
+import iphone03 from "./iphone/03.jpg"
+import iphone04 from "./iphone/04.jpg"
+import iphone05 from "./iphone/05.jpg"
+import iphone06 from "./iphone/06.jpg"
+import iphone07 from "./iphone/07.jpg"
+import iphone08 from "./iphone/08.jpg"
+import iphone09 from "./iphone/09.jpg"
+import iphone10 from "./iphone/10.jpg"
+import iphone11 from "./iphone/11.jpg"
+
+import airport from "./airport.jpg"
+
+export const MainImages = [
+  {
+    id:"0",
+    name:"exsiccatae",
+    url: archive16
+  },
+  {
+    id:"1",
+    name:"liana",
+    url: img00
+  },
+  {
+    id:"2",
+    name:"pie",
+    url: color07
+  },
+  {
+    id:"3",
+    name:"flower",
+    url:archive09
+  },
+  {
+    id:"4",
+    name:"bone",
+    url:color06
+  },
+  {
+    id:"5",
+    name:"cloth",
+    url:img10
+  },
+  {
+    id:"6",
+    name:"airport",
+    url:airport
+  },
+]
+
 export const IndexImages = [
   {
     id:"0",
@@ -234,5 +287,60 @@ export const GoodwinImages = [
   {
     id:"13",
     url: archive13
+  },
+]
+
+export const IphoneImages = [
+  {
+    id:"best",
+    url:airport
+  },
+  {
+    id:"00",
+    url:iphone00
+  },
+  {
+    id:"01",
+    url:iphone01
+  },
+  {
+    id:"02",
+    url:iphone02
+  },
+  {
+    id:"03",
+    url:iphone03
+  },
+  {
+    id:"04",
+    url:iphone04
+  },
+  {
+    id:"05",
+    url:iphone05
+  },
+  {
+    id:"06",
+    url:iphone06
+  },
+  {
+    id:"09",
+    url:iphone09
+  },
+  {
+    id:"07",
+    url:iphone07
+  },
+  {
+    id:"08",
+    url:iphone08
+  },
+  {
+    id:"10",
+    url:iphone10
+  },
+  {
+    id:"11",
+    url:iphone11
   },
 ]

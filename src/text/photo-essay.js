@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import FrancescaWoodman from "../images/woodman.jpg"
 import "../styles/global.css";
 
 export default class photoEssay extends Component {
@@ -6,9 +7,8 @@ export default class photoEssay extends Component {
     return(
       <div>
         <p>
-          Escaping the Frame<br/>
-          Looking beyond the photographs of Francesca Woodman <br/>
-          <i>by Bowen Chen</i>
+          Escaping the Frame: Looking Beyond the Photographs of Francesca Woodman <br/>
+          <i>By Bowen Chen</i>
         </p>
         <p>
           The first time I was shown pictures of Francesca Woodman (taken by Francesca Woodman), I was sitting in the backseat of an Uber with my studio manager, a young Polish woman, holding a bronze-cast statue of my boss’s Border Collie. It was his wedding anniversary that weekend, and I had spent the entire morning running a daisy chain of errands from forge to studio to Whole Foods and back again. One metal sculptor had made me ride on his invention (patented), a scooter-skateboard hybrid equipped with a 100cc combustion engine.<br/>
@@ -41,6 +41,8 @@ export default class photoEssay extends Component {
         <p>
           I spent over a year doing various exercises from The Photographer’s Playbook, several entries telling me to shoot more, think less, several more telling me to think more, shoot less. Other notable entries directed me to look at Diane Arbus, Francesca Woodman, to discard Berger for Fanon and read Barthes and interestingly, Borges and Emily Dickinson. That they would direct me to Borges, a master in crafting stories built upon words was perhaps indicative of everything I was unable to find within the photograph. The lesson that has stuck with me the longest was a lesson from Kota Ezawa: to make a photograph, and then when you are done, don’t take a picture of it. It would be my last lesson from the playbook and the last roll I have developed since then. A contact print filled with my grimacing face. It was nice, each time encountering a photograph I thought worth capturing, to let it escape. To turn the camera on myself and have the world observe me, observing it.
         </p>
+        <img className = "text-image" src ={FrancescaWoodman}/>
+
       </div>
     );
   }

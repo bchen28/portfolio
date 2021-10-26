@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Carousel from "../components/carousel.js"
 import NavBar from "../components/navbar.js"
-import {IndexImages} from "../images/index.js"
+import {MainImages} from "../images/index.js"
 import "../styles/global.css";
 
 export default class IndexPage extends Component {
@@ -9,7 +9,6 @@ export default class IndexPage extends Component {
     super(props);
   }
   render(){
-    const indexImages = IndexImages
     return (
       <main>
         <title> Bowen Chen </title>
@@ -17,7 +16,7 @@ export default class IndexPage extends Component {
           <NavBar/>
         </header>
         <div className = "carousel">
-            <Carousel images = {indexImages}/>
+            <Carousel images = {MainImages} slides ={1}/>
         </div>
       </main>
     );

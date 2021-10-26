@@ -25,11 +25,12 @@ export default class Carousel extends Component {
 
   render() {
     const {images} = this.props;
+    const slides_to_show = this.props.slides;
     const settings = {
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: slides_to_show,
       slidesToScroll: 1,
       centerMode: true,
       focusOnSelect: true,
@@ -38,6 +39,7 @@ export default class Carousel extends Component {
       nextArrow: <NextArrow onClick/>,
       prevArrow: <PrevArrow onClick/>
     };
+    console.log("slides_to_show:" + slides_to_show);
 
     return (
         <Slider {...settings}>

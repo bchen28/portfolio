@@ -2,9 +2,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
 @import url(http://fonts.googleapis.com/css?family=EB+Garamond);
 
-html {
-  /* background-color: lavenderblush; */
-}
 
 a{
   /* position: relative; */
@@ -50,13 +47,15 @@ nav {
   line-height: 2;
 }
 
+.text-image {
+  height:80vh;
+}
 .carousel{
-  margin-top: 3vh;
-  margin-left: 10%;
-  margin-right: 10%;
+  z-index:1;
 }
 
 .cssgrid {
+  position:relative;
   display:grid;
   grid-templat-columns: 100px auto;
   grid-template-rows: 50px auto;
@@ -78,6 +77,85 @@ nav {
 
 .logo {
   font-size: 1.5em;
+}
+.expand-sideBar{
+  display:none;
+  position:fixed;
+  width:20px;
+  height:100vh;
+  opacity: 40%;
+  left:0px;
+  top:0px;
+  background-color: gray;
+  z-index:2;
+}
+
+.collapse-sideBar{
+  position:fixed;
+  width:20px;
+  height:100vh;
+  opacity: 40%;
+  top:0px;
+  left:150px;
+  background-color: gray;
+  z-index: 2;
+}
+
+.expand-sideBar:hover{
+  cursor:pointer;
+  opacity:60%;
+}
+
+.collapse-sideBar:hover{
+  cursor:pointer;
+  opacity:60%;
+}
+
+.expand-arrow{
+  top:50%;
+  margin-top: 50vh;
+  color:white;
+  font-size: 1.3rem;
+}
+
+.text-sideBar{
+  position:relative;
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:2;
+  grid-row-end:3;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.1em;
+  justify-content: flex-start;
+  font-family: "Authentic Sans";
+  font-style: italic;
+  margin-top: 10vh;
+  margin-left: 4vw;
+  width:12vw;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.expand-text{
+  font-family: "Authentic Sans";
+  font-style: italic;
+  cursor: pointer;
+}
+.expand-list-item{
+  margin-left: 5px;
+  margin-top: 1.5vh;
+}
+
+.expand-sideBar-bg{
+  top:0px;
+  left:0px;
+  position:fixed;
+  width:150px;
+  background-color: white;
+  height:100vh;
+  z-index: 2;
 }
 
 .nextArrow {
@@ -118,6 +196,7 @@ nav {
 }
 
 .sideBar{
+  position:relative;
   grid-column-start:1;
   grid-column-end:2;
   grid-row-start:2;
@@ -131,9 +210,11 @@ nav {
   font-style: italic;
   margin-top: 10vh;
   margin-left: 4vw;
+  width:10vw;
   cursor: pointer;
-  z-order: 100;
+  z-index: 100;
 }
+
 
 .sliderImg {
   box-sizing: border-box;
@@ -162,6 +243,12 @@ nav {
   .wrapper {
     height: 60vh;
   }
+  .nextArrow{
+    right: 60px;
+  }
+  .prevArrow{
+    left:60px
+  }
 }
 
 
@@ -169,17 +256,50 @@ nav {
   .wrapper {
     height: 48vh;
   }
+  .nextArrow{
+    right: 40px;
+  }
+  .prevArrow{
+    left:40px
+  }
 
 }
 
-@media screen and (max-aspect-ratio: 980/970) {
-  .wrapper {
-    height: 40vh;
+
+@media screen and (max-aspect-ratio: 970/970) {
+  img.sliderImg {
+    height: 310px;
+  }
+  .slick-list{
+    margin: 0 -100px;
+  }
+  .nextArrow{
+    right: 0px;
+  }
+  .prevArrow{
+    left:0px;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-aspect-ratio: 580/870){
+  .nextArrow{
+    display: none;
+  }
+  .prevArrow{
+    display:none;
+  }
+}
 
+@media screen and (max-width: 960px) {
+  .text-sideBar {
+    display:none;
+  }
+  .sideBar{
+    display:none;
+  }
+  .expand-sideBar{
+    display:block;
+  }
 }
 
 .writing{
@@ -214,6 +334,19 @@ nav {
   width:90vw;
   margin: auto;
 }
+
+.iphone-images{
+  grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:2;
+  grid-row-end:3;
+  width:80vw;
+  margin: auto;
+}
+.tremor-text{
+  margin-top: 5vh;
+}
+
 @font-face{
   font-family:"garamond";
   src:url("fonts/EBGaramond-VariableFont_wght.ttf")
