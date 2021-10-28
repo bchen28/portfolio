@@ -39,6 +39,9 @@ nav {
   margin: auto;
 }
 
+.about-index-top-padding{
+  padding-top:50px;
+}
 .archive-image-label{
   /* margin:auto; */
   font-family: "Authentic Sans";

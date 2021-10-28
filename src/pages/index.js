@@ -12,11 +12,15 @@ export default class IndexPage extends Component {
     return (
       <main>
         <title> Bowen Chen </title>
-        <header>
-          <NavBar/>
-        </header>
-        <div className = "carousel">
-            <Carousel images = {MainImages} slides ={1}/>
+        <div className = "about-index-top-padding">
+          <div className = "text-body">
+            <header>
+              <NavBar/>
+            </header>
+            <div className = "carousel">
+                <Carousel images = {MainImages} slides ={1}/>
+            </div>
+          </div>
         </div>
       </main>
     );

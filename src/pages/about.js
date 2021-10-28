@@ -7,12 +7,14 @@ import "../styles/global.css"
 export default class AboutPage extends Component {
   render(){
     return(
-      <div>
-        <header>
-          <NavBar/>
-        </header>
-        <div className="writing">
-          <Info/>
+      <div className = "about-index-top-padding">
+        <div className = "text-body">
+          <header>
+            <NavBar/>
+          </header>
+          <div className="writing">
+            <Info/>
+          </div>
         </div>
       </div>
     );
