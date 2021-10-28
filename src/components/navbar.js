@@ -5,11 +5,11 @@ export default class NavBar extends Component {
   render(){
     return(
       <nav className = "header" class = "container">
-        <div><a href = "/text" >Essays</a></div>
-        <div><a href = "/images">Images</a></div>
-        <div><a className = "logo" href = "/">BOWEN CHEN</a></div>
-        <div><a href = "/technical-writing">Technical Writing</a></div>
-        <div><a href = "/about">About</a></div>
+        <div><a href = "/portfolio/text" >Essays</a></div>
+        <div><a href = "/portfolio/images">Images</a></div>
+        <div><a className = "logo" href = "/portfolio/">BOWEN CHEN</a></div>
+        <div><a href = "/portfolio/technical-writing">Technical Writing</a></div>
+        <div><a href = "/portfolio/about">About</a></div>
       </nav>
     );
   }

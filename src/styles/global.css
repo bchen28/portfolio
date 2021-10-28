@@ -12,7 +12,7 @@ a{
 }
 
 a:hover{
-  opacity: 10;
+  opacity: 1;
   /* bottom: 1px; */
 }
 header {
@@ -86,7 +86,7 @@ nav {
   position:fixed;
   width:20px;
   height:100vh;
-  opacity: 40%;
+  opacity: .4;
   left:0px;
   top:0px;
   background-color: gray;
@@ -97,7 +97,7 @@ nav {
   position:fixed;
   width:20px;
   height:100vh;
-  opacity: 40%;
+  opacity: .4;
   top:0px;
   left:150px;
   background-color: gray;
@@ -106,12 +106,12 @@ nav {
 
 .expand-sideBar:hover{
   cursor:pointer;
-  opacity:60%;
+  opacity:.6;
 }
 
 .collapse-sideBar:hover{
   cursor:pointer;
-  opacity:60%;
+  opacity:.6;
 }
 
 .expand-arrow{
@@ -163,7 +163,7 @@ nav {
 
 .nextArrow {
   position: absolute;
-  opacity: 30%;
+  opacity: .3;
   top: 40%;
   right: 80px;
   z-index: 100;
@@ -172,12 +172,12 @@ nav {
 }
 
 .nextArrow:hover {
-  opacity: 40%;
+  opacity: .4;
 }
 
 .prevArrow {
   position: absolute;
-  opacity: 30%;
+  opacity: .3;
   top: 40%;
   left: 80px;
   z-index: 100;
@@ -186,7 +186,7 @@ nav {
 }
 
 .prevArrow:hover {
-  opacity: 40%;
+  opacity: .4;
 }
 
 .sc div{
